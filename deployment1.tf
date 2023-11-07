@@ -24,7 +24,7 @@ resource "kubernetes_deployment" "deployment1" {
 
       spec {
         container {
-          image = ""
+          image = "769187045176.dkr.ecr.us-west-1.amazonaws.com/zi_service1:latest"
           name  = "zi-service1"
 
           resources {
