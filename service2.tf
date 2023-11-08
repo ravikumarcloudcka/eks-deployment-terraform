@@ -10,6 +10,5 @@ resource "kubernetes_service" "service2" {
       port        = 9090
       target_port = 9090
     }
-    type = "NodePort"
   }
 }
