@@ -43,8 +43,8 @@ resource "kubernetes_deployment" "deployment1" {
               path = "/"
               port = 8080
             }
-            initial_delay_seconds = 3
-            period_seconds        = 3
+            initial_delay_seconds = 20
+            period_seconds        = 20
           }
         }
       }
