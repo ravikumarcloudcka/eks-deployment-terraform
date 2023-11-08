@@ -2,7 +2,7 @@ resource "kubernetes_deployment" "deployment1" {
   metadata {
     name = "service1"
     labels = {
-      test = "service1"
+      app = "service1"
     }
   }
 
@@ -11,14 +11,14 @@ resource "kubernetes_deployment" "deployment1" {
 
     selector {
       match_labels = {
-        test = "service1"
+        app = "service1"
       }
     }
 
     template {
       metadata {
         labels = {
-          test = "service1"
+          app = "service1"
         }
       }
 
